@@ -61,7 +61,7 @@ export default {
         prefix: 't',
       },
       {
-        path: '~/components/placeolders/',
+        path: '~/components/placeholders/',
         prefix: 'ph',
       },
     ],
