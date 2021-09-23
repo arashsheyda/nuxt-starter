@@ -1,0 +1,8 @@
+@keyframes contentPlaceholdersAnimation {
+    0% {
+        transform: translate3d(-30%, 0, 0);
+    }
+    100% {
+        transform: translate3d(100%, 0, 0);
+    }
+}

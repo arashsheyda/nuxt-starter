@@ -1,0 +1,15 @@
+@function color($color-name) {
+  @return var(--color-#{$color-name});
+}
+
+@function color_lighten($key, $amount) {
+  @return lighten(map-get($colors, $key), $amount);
+}
+
+@function color_darken($key, $amount) {
+  @return darken(map-get($colors, $key), $amount);
+}
+
+@function to_opacity($color, $opacity) {
+  @return rgba(color($color), $opacity);
+}

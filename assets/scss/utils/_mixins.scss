@@ -1,0 +1,50 @@
+@mixin aniamtion($aniamtion...) {
+  -webkit-animation: $aniamtion;
+  -moz-animation: $aniamtion;
+  -ms-animation: $aniamtion;
+  -o-animation: $aniamtion;
+  animation: $aniamtion;
+}
+
+@mixin stopAniamtion {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transform($transform...) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+@mixin customSvg($name, $hover: #00c7c7, $color: #a5b7d2, $size: 1.3rem) {
+  .#{$name} {
+    svg {
+      height: $size;
+      width: $size;
+      color: #{$color};
+      fill: #{$color};
+      @include transition(all 0.3s ease);
+    }
+    &:hover {
+      svg {
+        fill: #{$hover};
+        color: #{$hover};
+        @include transition(all 0.3s ease);
+      }
+    }
+  }
+}

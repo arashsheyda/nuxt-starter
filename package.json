@@ -1,0 +1,41 @@
+{
+  "name": "nuxt-starter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/amp": "^0.5.4",
+    "@nuxtjs/i18n": "^7.0.3",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/sentry": "^5.1.3",
+    "aos": "^2.3.4",
+    "core-js": "^3.15.1",
+    "lite-youtube-embed": "^0.2.0",
+    "nuxt": "^2.15.7",
+    "nuxt-helmet": "^2.0.1",
+    "nuxt-leaflet": "0.0.25",
+    "v-click-outside": "^3.1.2",
+    "vue-carousel": "^0.18.0",
+    "vue-lottie": "^0.2.1",
+    "vue-mq": "^1.0.1",
+    "vue-ripple-directive": "^2.0.1",
+    "vue-tippy": "^4.11.0",
+    "vue-toastification": "^1.7.11",
+    "vuelidate": "^0.7.6"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^0.6.0",
+    "@nuxtjs/color-mode": "^2.1.1",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/svg": "^0.2.0",
+    "fibers": "^5.0.0",
+    "sass": "^1.42.1",
+    "sass-loader": "^10.2.0"
+  }
+}
